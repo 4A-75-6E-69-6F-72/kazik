@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>About us</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates' rel='stylesheet'
+        type='text/css'>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div>
+
+        <!-- banner section -->
+        <div class="spacebetween-column bg-image full-page banner-section">
+
+
+            <!-- nav bar -->
+            <div class="nav-bar">
+
+                <!-- drawer button -->
+                <div class="menu-button" onclick="openDrawer()">&#9776;</div>
+
+                <!-- drawer -->
+                <div class="drawer" id="myDrawer">
+                    <div class="row align-center header">
+                        <a href="javascript:void(0)" class="close-btn" onclick="closeDrawer()">&times;</a>
+                        <div class="nav-bar-logo-container">
+                            <img class="logo" src="static/logo.png" alt="logo kazik">
+                        </div>
+
+                    </div>
+                    <a href="#mission" onclick="closeDrawer()">
+                        <div class="row align-center">
+                            <i class="fas fa-star icon"></i>
+                            Notre mission
+                        </div>
+                    </a>
+                    <a href="#client" onclick="closeDrawer()">
+                        <div class="row align-center">
+                            <i class="fas fa-smile icon"></i>
+                            Le client d'abord
+                        </div>
+                    </a>
+                    <a href="#news" onclick="closeDrawer()">
+                        <div class="row align-center">
+                            <i class="fas fa-heart icon"></i>
+                            Ils parlent de nous
+                        </div>
+                    </a>
+                    <a href="#contact" onclick="closeDrawer()">
+                        <div class="row align-center">
+                            <i class="fas fa-phone icon"></i>
+                            Restons en contact
+                        </div>
+                    </a>
+                </div>
+
+                <!-- drawer overlay -->
+                <div class="overlay" id="myOverlay" onclick="closeDrawer()"></div>
+
+                <!-- nav bar buttons -->
+                <div class="nav-bar-menu">
+                    <a href="#mission"><button type="button">Notre mission</button></a>
+                    <a href="#client"><button type="button">Le client d'abord</button></a>
+                    <a href="#news"><button type="button">Ils parlent de nous</button></a>
+                    <a href="#contact"><button type="button">Restons en contact</button></a>
+                </div>
+
+                <!-- nav bar logo -->
+                <div class="nav-bar-logo-container">
+                    <img class="logo" src="static/logo.png" alt="logo kazik">
+                </div>
+            </div>
+            <!-- banner text -->
+            <div class="full-width">
+                <div class="half-width">
+                    <div class="banner-title-container">
+                        <h1 class="banner-title">À propos</h1>
+                        <h1 class="banner-title">de Kazik</h1>
+                    </div>
+                </div>
+                <div class="half-width">
+                </div>
+            </div>
+
+            <!-- overlay -->
+            <div class="text-overlay full-page" id="myTextOverlay"></div>
+
+            <!-- nav bar space -->
+            <div class="nav-bar-space">
+            </div>
+        </div>
+
+        <!-- notre mission -->
+        <div id="mission" class="full-page diplay-flex full-width">
+            <div class="half-width full-height center-flex card-text">
+                <div class="card-text-container">
+                    <h2 class>Notre mission</h2>
+                    <p>Le projet Kazik a pour mission de faire usage des outils d’informatique récentes pour
+                        rapprocher les Camerounais de la culture musicale Camerounaise.</p>
+                    <a href="#contact"><button>Restons en contact</button></a>
+                </div>
+            </div>
+
+            <div class="half-width full-height center-flex card-image">
+                <div class="card-image-container">
+                    <img src="https://images.unsplash.com/photo-1505147634308-9b83c4cb46b4?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- le client d'abord -->
+        <div id="client" class="full-page diplay-flex full-width">
+            <div class="half-width full-height center-flex">
+                <div class="card-image-container">
+                    <img src="https://images.unsplash.com/photo-1622556498246-755f44ca76f3?auto=format&fit=crop&q=80&w=1964&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                </div>
+            </div>
+            <div class="half-width full-height center-flex">
+                <div class="card-text-container">
+                    <h2>Le client d'abord</h2>
+                    <p>Nous mettons toujours les décisions des utilisateurs en avant. Nous encourageons nos utilisateurs
+                        à nous faire des retours car leur satisfaction l’hors de l’utilisation des nos applications est
+                        notre obsession.</p>
+                    <a href="#contact"><button>Restons en contact</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ils parlent de Kazik -->
+        <div id="news" class="full-page column full-width news-kazik-container">
+            <div class="full-page content">
+                <div class="full-width one-quarter-height display-flex align-bottom justify-center reference-title">
+                    <h2>Ils parlent de Kazik</h2>
+                </div>
+                <div class="full-width display-flex news-card-section">
+                    <div class="column half-width bottom-flex">
+                        <div class="column news-card-container">
+                            <img src="static/crtv-logo.png" alt="">
+                            <p>
+                                La chaine de télévision nationale du Cameroun
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="column half-width bottom-flex ">
+                        <div class="column news-card-container">
+                            <img src="static/ictu-logo.png" alt="">
+                            <p>
+                                L’université des TIC
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- restons en contact -->
+        <div id="contact" class="full-page column">
+            <div class="half-height column full-width download-app-container">
+                <div class="full-width one-quarter-height display-flex align-bottom justify-center download-title">
+                    <h2>Téléchargez l'application kazik</h2>
+                </div>
+                <div class="full-width three-quarter-height center-flex">
+                    <button><a href="https://play.google.com/store/apps/details?id=com.kazik.kazik"><img
+                                src="static/google_play_icon.png" alt=""></a></button>
+                </div>
+            </div>
+            <div class="half-height column full-width keep-in-touch-container">
+                <div class="full-page content">
+                    <div class="full-width one-quarter-height display-flex align-bottom justify-center">
+                        <h2>Restons en contact</h2>
+                    </div>
+                    <div class="full-width row justify-center contact-icons-container">
+                        <a href="https://facebook.com/kazik237"><img src="static/logo_facebook.png" alt=""></a>
+                        <a href="https://chat.whatsapp.com/IHLKggqCmJj029lO5KQLgA"><img src="static/logo_whatsapp.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- copyright -->
+        <div class="full-width center-flex center-text">
+            <p>copyright ©2023 Kazik</p>
+        </div>
+
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
